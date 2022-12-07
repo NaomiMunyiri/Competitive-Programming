@@ -1,7 +1,8 @@
 class Solution:
+    #stack-operator applies prev operatin-lifo
     def evalRPN(self, tokens: List[str]) -> int:
         stack=[]
-        for c in tokens:
+        for c in tokens: #iterate
             if c=="+":
                 stack.append(stack.pop()+stack.pop())
 

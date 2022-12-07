@@ -1,9 +1,10 @@
 class Solution:
+    #O(n)-avg ie only look at one half,O(n^2)-worst
     def kthLargestNumber(self, nums: List[str], k: int) -> str:
         k=len(nums)-k
 
         def quickSelect(l,r):
-            pivot,p=nums[r],l
+            pivot,p=nums[r],l #rightmost, left most
             for i in range(l,r):
                 if nums[i]<=pivot:
                     nums[p],nums[i]=nums[i],nums[p]

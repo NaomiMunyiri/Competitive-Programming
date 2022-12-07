@@ -1,4 +1,7 @@
 class Solution:
+    #O(n^2)
+    #store in dic
+    #loop twice
     def numIdenticalPairs(self, nums: List[int]) -> int:
         counter=0
         dic={}
