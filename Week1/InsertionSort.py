@@ -14,6 +14,9 @@ import sys
 #  2. INTEGER_ARRAY arr
 #
 
+Given a sorted list with an unsorted number e in the rightmost cell, can you write some simple code to insert e
+into the array so that it remains sorted?
+
 def insertionSort1(n, arr):
     # Write your code here
     target=arr[-1] #fetches last element if array
